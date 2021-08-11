@@ -10,7 +10,6 @@ renderBtn.addEventListener('click', onRenderSalary);
 
 function onGetValue(event) {
   value.push(event.currentTarget.value.split(' '));
-  console.log(value);
   event.currentTarget.value = '';
 }
 function onRenderSalary() {
@@ -19,7 +18,7 @@ function onRenderSalary() {
   const element = document.createElement('li');
   element.classList.add('boxes__element')
   const p = document.createElement('p');
-  element.classList.add('boxes__text')
+  p.classList.add('boxes__text')
 
   value[0].forEach(element => {
     
@@ -41,3 +40,14 @@ function onRenderSalary() {
     value = [];
   }
 }
+
+
+
+
+
+document.body.addEventListener('keydown', function(event) {
+  if (event.code !== 'Enter'){
+    return
+  }
+  return onRenderSalary()
+});

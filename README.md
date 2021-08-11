@@ -1,1 +1,0 @@
-# Salary-script-RETRO-PLUS

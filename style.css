@@ -1,5 +1,6 @@
 
 body{
+  font-family: 'Exo 2', sans-serif;
   background-image: url(./img/b957a6fbbffa5659fb38d4a22f4d4850.jpg);
 }
 .conteiner{
@@ -8,6 +9,7 @@ body{
   margin-right: auto;
 }
 .controls{
+  align-items: center;
   display: flex;
   padding: 40px;
   margin-left: auto;
@@ -21,9 +23,12 @@ body{
   font-size: 30px;
 }
 .controls__input::placeholder{
+  font-family: 'Exo 2', sans-serif;
   font-size: 20px;
 }
 .controls__button{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
   width: 200px;
   height: 50px;
   border: none;
@@ -35,15 +40,19 @@ body{
   background-color: #ffd651;
 }
 .controls__button:active{
-  background-color: #e2c259;
+  color: #fff;
+  background-color: #5e5e5e;
 }
 .boxes{
   list-style: none;
 }
 .boxes__element{
+ background-color: rgb(37 37 37 / 67%)
 }
 .boxes__text{
-  background-color: rgba(0, 0, 0, 0.671);
+  padding: 10px;
+  font-family: 'Exo 2', sans-serif;
+
   color: aliceblue;
   font-size: 35px;
 }
