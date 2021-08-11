@@ -15,14 +15,17 @@
     </style>
   </head>
   <body>
-    <div id="controls">
-      <input type="input" id="input" />
-      <button class="rendBut" type="button" data-action="render">
-        Создать
-      </button>
-    </div>
+    <div class="conteiner">
+      <div class = 'controls'id="controls">
+        <input class='controls__input'type="input" id="input" placeholder="Введите количество гирлянд"/>
+        <button class="controls__button" type="button" data-action="render">
+          Создать
+        </button>
+      </div>
 
-    <ul id="boxes"></ul>
+      <ul class="boxes" id="boxes"></ul>
+    </div>
+    
 
     <script src="js/task-08.js" type="module"></script>
   </body>

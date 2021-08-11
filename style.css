@@ -1,4 +1,49 @@
-.rendBut {
-  width: 150px;
+
+body{
+  background-image: url(./img/b957a6fbbffa5659fb38d4a22f4d4850.jpg);
+}
+.conteiner{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.controls{
+  display: flex;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.controls__input{
+  background-color:black;
+  color: antiquewhite;
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 30px;
+}
+.controls__input::placeholder{
+  font-size: 20px;
+}
+.controls__button{
+  width: 200px;
   height: 50px;
+  border: none;
+  background-color: #f8cf48;
+  border-radius: 4%;
+  font-size: 20px;
+}
+.controls__button:hover{
+  background-color: #ffd651;
+}
+.controls__button:active{
+  background-color: #e2c259;
+}
+.boxes{
+  list-style: none;
+}
+.boxes__element{
+}
+.boxes__text{
+  background-color: rgba(0, 0, 0, 0.671);
+  color: aliceblue;
+  font-size: 35px;
 }
