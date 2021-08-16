@@ -2,12 +2,76 @@
 body{
   font-family: 'Exo 2', sans-serif;
   background-image: url(./img/b957a6fbbffa5659fb38d4a22f4d4850.jpg);
+  list-style: none;
+  text-decoration: none;
 }
-.conteiner{
+ul{
+  list-style: none;
+}
+
+.container{
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+.header{
+  
+  background-color:rgb(39 39 39 / 67%);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.container--flex{
+  display: flex;
+  align-items: center;
+}
+
+.logo__span{
+  
+  display: inline-block;
+  width: 200px;
+  height: 85px;
+  background-image: url(./img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition:all 0.5s ease-out;
+}
+.logo:hover .logo__span{
+  background-image: url(./img/logo-active.png);
+}
+.nav{
+  width: 100%;
+  align-items: center;
+  display: inline-flex;
+}
+.nav__list{
+  align-items: center;
+  display: flex;
+}
+.nav__item{
+  margin-right: 30px;
+}
+.nav__link{
+  text-decoration: none;
+  color: #dad6d6;
+  font-size: 18px;
+}
+.nav__link:hover{
+  color: #5e5e5e;
+}
+.nav__contact{
+  margin-left: auto;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
 .controls{
   align-items: center;
   display: flex;
