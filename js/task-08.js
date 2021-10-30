@@ -4,7 +4,6 @@ const list = document.querySelector('#boxes');
 let value = [];
 let salary = 0;
 
-
 input.addEventListener('blur', onGetValue);
 renderBtn.addEventListener('click', onRenderSalary);
 
@@ -16,16 +15,15 @@ function onRenderSalary() {
   let sum = 0;
 
   const element = document.createElement('li');
-  element.classList.add('boxes__element')
+  element.classList.add('boxes__element');
   const p = document.createElement('p');
-  p.classList.add('boxes__text')
+  p.classList.add('boxes__text');
 
   value[0].forEach(element => {
-    
     sum = sum + +element;
   });
-  if (sum > 41) {
-    salary += sum * 0.6;
+  if (sum > 61) {
+    salary += sum * 0.7;
     console.log(salary);
     p.textContent = `Зарплата: ${Math.round(salary)}грн.`;
     element.appendChild(p);
@@ -33,7 +31,7 @@ function onRenderSalary() {
     list.append(element);
     value = [];
   } else {
-    salary += 25;
+    salary += 40;
     p.textContent = `Зарплата: ${Math.round(salary)}грн.`;
     element.appendChild(p);
     list.append(element);
@@ -41,13 +39,9 @@ function onRenderSalary() {
   }
 }
 
-
-
-
-
-document.body.addEventListener('keydown', function(event) {
-  if (event.code !== 'Enter'){
-    return
+document.body.addEventListener('keydown', function (event) {
+  if (event.code !== 'Enter') {
+    return;
   }
-  return onRenderSalary()
+  return onRenderSalary();
 });
